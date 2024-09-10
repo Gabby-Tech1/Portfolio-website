@@ -383,6 +383,7 @@ body {
     font-weight: 600;
     transition: all 0.3s ease;
     width: 100%;
+    cursor: pointer;
     max-width: 350px;
     transform: rotate(0deg);
   }
@@ -415,7 +416,7 @@ body {
   }
   
   .service-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
     color: black;
   }
@@ -428,27 +429,22 @@ body {
   .skills-section {
     padding-top: 3rem; /* Equivalent to pt-12 */
     padding-bottom: 3rem; /* Equivalent to pb-12 */
-    margin: 2rem 0; /* Equivalent to my-8 */
+    margin: 2rem auto; 
     text-align: center;
     width: 90%;
     max-width: 1200px;
 }
 
 .skills-title {
-    font-size: 2rem; /* Equivalent to text-2xl */
+    font-size: 2rem; 
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-    .skills-title {
-        font-size: 2.5rem; /* Equivalent to md:text-4xl */
-    }
-}
 
 @media (min-width: 1024px) {
     .skills-title {
-        font-size: 3rem; /* Equivalent to lg:text-5xl */
+        font-size: 2rem;
     }
 }
 
@@ -508,7 +504,7 @@ body {
 
 @media (max-width: 480px) {
     .skills-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .skills-container {
@@ -638,10 +634,11 @@ body {
 
 /* Projects Container */
 .projects-container {
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem; /* Equivalent to gap-8 */
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin: 2rem auto;
 }
 
 @media (min-width: 768px) {
