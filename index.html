@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GabbyTECH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+qe/sN1stVRN5aNu4BfIP1WT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">
+        Gabby<span class="logo-highlight">TECH</span>.
+      </h1>
+      <nav class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonial</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="menu-icon" onclick="toggleNavbar()">
+        <svg class="icon" fill="#0ef" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-nav" class="mobile-nav hidden">
+    <div class="mobile-nav-content">
+      <a href="#" class="nav-link-mobile" onclick="closeNavbar()">Home</a>
+      <a href="#about" class="nav-link-mobile" onclick="closeNavbar()">About</a>
+      <a href="#services" class="nav-link-mobile" onclick="closeNavbar()">Services</a>
+      <a href="#projects" class="nav-link-mobile" onclick="closeNavbar()">Projects</a>
+      <a href="#testimonials" class="nav-link-mobile" onclick="closeNavbar()">Testimonial</a>
+      <a href="#contact" class="nav-link-mobile" onclick="closeNavbar()">Contact</a>
+    </div>
+    <div class="close-icon" onclick="closeNavbar()">
+      <svg class="icon" fill="#0ef" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19.59 7.41L18.17 6l-6 6-6-6L4.41 7.41 10.41 13.41l-6 6L6 20.83l6-6 6 6 1.41-1.42-6-6z"/></svg>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 class="hero-heading">
+          Hello everyone, I'm <span class="highlight">Gabriel Kwame Addo Quainooo</span>,
+        </h1>
+        <p class="hero-subheading">
+          A Very Passionate <span id="type-effect" class="type-effect"></span>
+        </p>
+        <p class="hero-description">
+          Step into my world of digital wonder, where imagination knows no bounds and the latest technologies meet timeless design principles. Let's collaborate to create something truly remarkable—a fusion of creativity, innovation, and technical expertise.
+        </p>
+        <button onclick="downloadCV()" class="download-btn">
+          Download CV <i class="fas fa-download"></i>
+        </button>
+      </div>
+      <div class="hero-image-container">
+        <img src="./Assets/image.png" alt="hero image" class="hero-image">
+      </div>
+    </div>
+  </div>
+  <section class="about-section" id="about">
+    <h1 class="about-heading">
+      KNOW MORE <span class="highlight">ABOUT ME</span>
+    </h1>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          Welcome to my digital playground! I'm Gabriel Kwame Addo Quainoo, a frontend developer, UI designer, and graphic designer with a passion for building bridges between creativity and technology. I am an undergrauduate student from the University of Ghana, offering computer science and mathematics. With a background in programming and a knack for problem-solving, I craft digital experiences that are both beautiful and functional. When I'm not coding or designing, you can find me exploring new design trends, experimenting with innovative technologies, or sipping coffee. Let's connect and create something amazing together!
+        </p>
+        <a href="#contact">
+          <button class="connect-btn">Connect with me</button>
+        </a>
+      </div>
+      <img src="./Assets/About.jpg" alt="Gabriel Kwame Addo Quainoo" class="about-image">
+    </div>
+  </section>
+  <section id="services" class="services-section">
+    <h1 class="services-heading">MY <span class="highlight">SERVICES</span></h1>
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-card web-card">
+          <i class="fa-solid fa-code service-icon"></i>
+          <h1 class="service-title">Web Development</h1>
+          <p class="service-description">
+            From concept to launch, I develop robust web applications that streamline processes, enhance user experience, and drive engagement. Also, I create mobile-friendly, intuitive interfaces that adapt seamlessly to various devices and screens, ensuring an exceptional user experience.
+          </p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-card mobile-card">
+          <i class="fa-solid fa-mobile-alt service-icon"></i>
+          <h1 class="service-title">Mobile Development</h1>
+          <p class="service-description">
+            I specialize in building high-performance, native mobile apps that utilize the latest platform features and technologies. Also, I design and develop tailored mobile applications that meet your unique business needs, leveraging cutting-edge technologies to create engaging, user-friendly, and scalable solutions.
+          </p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-card uiux-card">
+          <i class="fa-solid fa-pen-nib service-icon"></i>
+          <h1 class="service-title">UI/UX Design</h1>
+          <p class="service-description">
+            I create intuitive, user-centered designs that drive engagement and conversion. I also craft intuitive interactions and animations that enhance user engagement and design visually stunning, responsive interfaces that delight users. And finally, I refine designs based on user feedback and performance metrics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="skills-section" id="skills">
+    <h1 class="skills-title">
+        MY <span class="highlighted-text">Skills</span>
+    </h1>
+    <div class="skills-container">
+        <!-- Skill items will be inserted here by JavaScript -->
+    </div>
+  </div>
+  <div id="projects">
+    <h1 class="title">MY Latest <span class="highlighted-text">Projects</span></h1>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="card">
+            <figure><img src="path/to/recipe.png" alt="Hot Prepare Recipe" class="project-image"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Hot Prepare Recipe</h2>
+                <p>A recipe site built with react and tailwind by fetching data from an API using the fetch method.</p>
+                <div class="card-actions">
+                    <a href="https://hot-prepare-recipe.vercel.app" target="_blank" class="btn">Visit Site</a>
+                    <a href="https://github.com/Gabby-Tech1/Hot-Prepare-Recipe" target="_blank" class="btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card">
+            <figure><img src="path/to/Chat.png" alt="Chat Interface" class="project-image"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Chat Interface</h2>
+                <p>Coding out a UI design with react and tailwindcss.</p>
+                <div class="card-actions">
+                    <a href="https://hot-prepare-recipe.vercel.app" target="_blank" class="btn">Visit Site</a>
+                    <a href="https://github.com/Ideation-Axis-Intern/UI-Challenge-" target="_blank" class="btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="card">
+            <figure><img src="path/to/gtmovies.png" alt="GT Movies" class="project-image"></figure>
+            <div class="card-body">
+                <h2 class="card-title">GT Movies</h2>
+                <p>A fullstack Netflix clone project built with a movie API and Firebase as backend.</p>
+                <div class="card-actions">
+                    <a href="https://gtmovies-website.web.app/" target="_blank" class="btn">Visit Site</a>
+                    <a href="https://github.com/Gabby-Tech1/GTMovie" target="_blank" class="btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="card">
+            <figure><img src="path/to/gpt.png" alt="GT Chat AI" class="project-image"></figure>
+            <div class="card-body">
+                <h2 class="card-title">GT Chat AI</h2>
+                <p>A fullstack Gemini clone project built with a Gemini API and Firebase as backend.</p>
+                <div class="card-actions">
+                    <a href="https://gt-chat-ai.firebaseapp.com/chat" target="_blank" class="btn">Visit Site</a>
+                    <a href="https://github.com/Gabby-Tech1/Chat-AI" target="_blank" class="btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="card">
+            <figure><img src="path/to/otp.png" alt="OTP System" class="project-image"></figure>
+            <div class="card-body">
+                <h2 class="card-title">OTP System</h2>
+                <p>One Time Password system built with React, no backend to receive code included.</p>
+                <div class="card-actions">
+                    <a href="https://otp-system.vercel.app/" target="_blank" class="btn">Visit Site</a>
+                    <a href="https://github.com/Gabby-Tech1/OTP-System" target="_blank" class="btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="testimonials">
+    <h1 class="heading">Testimonials From <span class="highlight">Clients</span></h1>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="avatar" class="avatar"/>
+            <div class="testimonial-text">
+              <p class="name">Nana A. Agyapong</p>
+              <p class="role">CEO of Melcom Online</p>
+              <p class="message">
+                His expertise in modern web technologies has improved our online sales and customer engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the swiper-slide block for each testimonial -->
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="avatar" class="avatar"/>
+            <div class="testimonial-text">
+              <p class="name">Derrick K.</p>
+              <p class="role">Founder of ABC Startups</p>
+              <p class="message">
+                Working with Gabby Tech was a pleasure. He is a skilled professional who listens to your needs and delivers high quality solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container">
+    <div class="header">GET IN <span class="highlight">TOUCH</span> WITH US</div>
+    <div class="form-container">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name" class="label">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message" class="label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            rows="4"
+            class="textarea"
+          ></textarea>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="title">GT Folio</div>
+      <p class="subtitle">Made by Gabby Tech</p>
+      <div class="social-links">
+        <a href="https://wa.me/+233591071237" target="_blank" rel="noopener noreferrer">
+          <img src="path/to/Whatsapp.png" alt="WhatsApp" class="icon" />
+        </a>
+        <a href="https://github.com/Gabby-Tech1" target="_blank" rel="noopener noreferrer">
+          <img src="path/to/GitHub.png" alt="GitHub" class="icon" />
+        </a>
+        <a href="mailto:gkaquainoo@gmail.com">
+          <img src="path/to/Email.png" alt="Email" class="icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-kwame-addo-quainoo-3b0960297/" target="_blank" rel="noopener noreferrer">
+          <img src="path/to/LinkedIn.png" alt="LinkedIn" class="icon" />
+        </a>
+      </div>
+      <div class="copyright">Copyright © 2024. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
