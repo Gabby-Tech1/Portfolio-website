@@ -599,26 +599,23 @@ body {
     }
   }
   
-  /* Basic resets */
-
-
-/* Projects Section */
 #projects {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     padding: 2rem 0;
     text-align: center;
 }
 
-.title {
-    font-size: 2rem; /* Equivalent to text-2xl */
+.project-title {
+    font-size: 2rem; 
     margin-bottom: 1rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .title {
-        font-size: 2.5rem; /* Equivalent to md:text-4xl */
+        font-size: 2.5rem; 
     }
 }
 
