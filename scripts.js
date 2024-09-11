@@ -1,4 +1,3 @@
-
 function toggleNavbar() {
     const mobileNav = document.getElementById('mobile-nav');
     mobileNav.classList.toggle('show');
@@ -13,14 +12,12 @@ function toggleNavbar() {
     const heroText = document.querySelector('.hero-text');
     const heroImage = document.querySelector('.hero-image-container');
 
-    // Add classes to trigger animations
     heroText.classList.add('animate-slide-left');
     heroImage.classList.add('animate-slide-right');
 });
 
 function downloadCV() {
     const downloadUrl = './Assets/cv.pdf';
-    // Opening in a new tab instead of forcing download directly
     window.open(downloadUrl, '_blank');
 }
   
@@ -64,7 +61,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-  // Optional: Add smooth scroll behavior to anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -93,7 +89,6 @@ const skills = [
 
 const skillsContainer = document.querySelector('.skills-container');
 
-// Loop through skills array and create HTML elements for each skill
 skills.forEach(skill => {
     const skillCard = document.createElement('div');
     skillCard.classList.add('skill-card');
@@ -107,7 +102,6 @@ skills.forEach(skill => {
     skillName.textContent = skill.name;
     skillName.classList.add('skill-name');
 
-    // Append image and name to skill card, then append skill card to container
     skillCard.appendChild(skillImage);
     skillCard.appendChild(skillName);
     skillsContainer.appendChild(skillCard);
@@ -124,9 +118,16 @@ const swiper = new Swiper('.swiper-container', {
     },
     on: {
       slideChange: () => console.log('Slide changed'),
-      init: (swiper) => console.log(swiper),
+      init: (swiper) => {
+        console.log(swiper);
+        let autoScrollInterval = setInterval(() => {
+          swiper.slideNext();
+        }, 5000);
+      },
     },
   });
+
+
   
   document.getElementById('contact-form').addEventListener('submit', async (event) => {
     event.preventDefault();
