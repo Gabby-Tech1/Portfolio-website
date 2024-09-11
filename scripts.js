@@ -61,16 +61,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-  
   // JavaScript to dynamically insert skills data
 const skills = [
     { name: 'HTML', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1200px-HTML5_Badge.svg.png' },
