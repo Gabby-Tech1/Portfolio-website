@@ -1,3 +1,4 @@
+
 function toggleNavbar() {
     const mobileNav = document.getElementById('mobile-nav');
     mobileNav.classList.toggle('show');
@@ -8,15 +9,20 @@ function toggleNavbar() {
     mobileNav.classList.remove('show');
   }
   
-  function downloadCV() {
-    const downloadUrl = 'path/to/your/cv.pdf'; // Replace with the actual path to your CV file
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.setAttribute('download', 'cv.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  window.addEventListener('load', () => {
+    const heroText = document.querySelector('.hero-text');
+    const heroImage = document.querySelector('.hero-image-container');
+
+    // Add classes to trigger animations
+    heroText.classList.add('animate-slide-left');
+    heroImage.classList.add('animate-slide-right');
+});
+
+function downloadCV() {
+    const downloadUrl = './Assets/cv.pdf';
+    // Opening in a new tab instead of forcing download directly
+    window.open(downloadUrl, '_blank');
+}
   
   // Typewriter effect
   const typeEffectElement = document.getElementById('type-effect');
