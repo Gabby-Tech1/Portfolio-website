@@ -73,7 +73,7 @@ const skills = [
     { name: 'Git', image: 'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Git.svg' },
     { name: 'React', image: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png' },
     { name: 'Python', image: 'https://cdn.freebiesupply.com/logos/thumbs/1x/python-3-logo.png' },
-    { name: 'React Native', image: 'https://www.appcoda.com/wp-content/uploads/2015/04/react-native.png' },
+    { name: 'React Native', image: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png' },
     { name: 'Tailwind CSS', image: 'https://mythinkpond.com/img/logo/tailwindcss-logo.png' },
     { name: 'Bootstrap', image: 'https://them.es/starter-bootstrap/wp-content/uploads/sites/7/2021/05/bootstrap-logo-300x239.png' }
 ];
@@ -100,26 +100,25 @@ skills.forEach(skill => {
 
 // Initialize Swiper
 const swiper = new Swiper('.swiper-container', {
-    spaceBetween: 20,
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-      },
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
     },
-    on: {
-      slideChange: () => console.log('Slide changed'),
-      init: (swiper) => {
-        console.log(swiper);
-        let autoScrollInterval = setInterval(() => {
-          swiper.slideNext();
-        }, 5000);
-      },
+  },
+  on: {
+    slideChange: () => console.log('Slide changed'),
+    init: (swiper) => {
+      console.log(swiper);
     },
-  });
+  },
+});
 
-
-  
   document.getElementById('contact-form').addEventListener('submit', async (event) => {
     event.preventDefault();
     const form = event.target;
