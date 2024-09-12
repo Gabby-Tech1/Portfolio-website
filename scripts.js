@@ -68,6 +68,7 @@ const skills = [
     { name: 'GitHub', image: 'https://www.vectorlogo.zone/logos/github/github-icon.svg' },
     { name: 'Firebase', image: 'https://cdn.freebiesupply.com/logos/thumbs/1x/firebase-1-logo.png' },
     { name: 'JavaScript', image: 'https://techstack-generator.vercel.app/js-icon.svg' },
+    { name: 'TypeScript', image: 'https://techstack-generator.vercel.app/ts-icon.svg' },
     { name: 'VS Code', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png' },
     { name: 'Git', image: 'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Git.svg' },
     { name: 'React', image: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png' },
